@@ -1,33 +1,66 @@
 import React from 'react';
 import '../styles/App.css';
-import { Avatar, Grid, Paper } from '@mui/material';
+import { createTheme, Grid, ThemeProvider} from '@mui/material';
+
+import data from '../static/data/projects.json';
 
 import Project from '../components/project';
+import Header from '../components/header';
 
-import image from '../static/images/Me.jpg'
+interface ProjectData {
+  name: string,
+  role: string,
+  desc: string,
+  techSkills: string[],
+  leadSkills: string[],
+  imagesURLs: string[],
+}
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#175676'
+    },
+    secondary: {
+      main: '#32021f'
+    },
+    success: {
+      main: '#f1e9db'
+    }
+  },
+  spacing: 4,
+});
 
 function App() {
+
+  const projectsArray: ProjectData[] = Object.values(JSON.parse(JSON.stringify(data)));
+
+  console.log("Project Data: ", projectsArray);
+  
+  const projects = projectsArray.map((data,id)=>{
+    console.log("Data: ", data);
+    return (
+      <Project key={id}/>
+    )
+  })
+
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+      <div className="App">
 
-      <Paper>
-        <h1>Hi, I'm Matt</h1>
-        <Avatar
-        alt="Remy Sharp"
-        src={image}
-        sx={{ width: 56, height: 56 }}
-        />
-      </Paper>
+        <Header />
 
-      <Grid
-      container
-      spacing={2}
-      justifyContent="center"
-      alignItems="center"
-      >
-        <Project />
-      </Grid>
-    </div>
+        <Grid
+        p={10}
+        container
+        spacing={8}
+        justifyContent="center"
+        alignItems="center"
+        >
+          {projects}
+        </Grid>
+      </div>
+    </ThemeProvider>
   );
 }
 

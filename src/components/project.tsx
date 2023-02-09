@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Project.css';
 import { Card, Grid, Paper, Button } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 
@@ -30,7 +29,7 @@ function Project() {
   }
 
   return (
-    <Grid item xs={11} md={3}>
+    <Grid item xs={11} md={4}>
       <Card>
         <Carousel
         fullHeightHover={true} 

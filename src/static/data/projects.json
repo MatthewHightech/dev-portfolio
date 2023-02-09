@@ -1,0 +1,97 @@
+{
+    "project1": {
+      "name": "Grasp AI",
+      "role": "Lead Dev",
+      "desc": "Hello Test",
+      "techSkills": [
+        "skill",
+        "skill2",
+        "skill3"
+      ],
+      "leadSkills": [
+        "skill",
+        "skill2",
+        "skill3"
+      ],
+      "imageURLs": [
+        "pic.png",
+        "pic2.png"
+      ]
+    },
+    "project2": {
+      "name": "Grasp AI",
+      "role": "Lead Dev",
+      "desc": "Hello Test",
+      "techSkills": [
+        "skill",
+        "skill2",
+        "skill3"
+      ],
+      "leadSkills": [
+        "skill",
+        "skill2",
+        "skill3"
+      ],
+      "imageURLs": [
+        "pic.png",
+        "pic2.png"
+      ]
+    },
+    "project3": {
+      "name": "Grasp AI",
+      "role": "Lead Dev",
+      "desc": "Hello Test",
+      "techSkills": [
+        "skill",
+        "skill2",
+        "skill3"
+      ],
+      "leadSkills": [
+        "skill",
+        "skill2",
+        "skill3"
+      ],
+      "imageURLs": [
+        "pic.png",
+        "pic2.png"
+      ]
+    },
+    "project4": {
+        "name": "Grasp AI",
+        "role": "Lead Dev",
+        "desc": "Hello Test",
+        "techSkills": [
+          "skill",
+          "skill2",
+          "skill3"
+        ],
+        "leadSkills": [
+          "skill",
+          "skill2",
+          "skill3"
+        ],
+        "imageURLs": [
+          "pic.png",
+          "pic2.png"
+        ]
+      },
+      "project5": {
+        "name": "Grasp AI",
+        "role": "Lead Dev",
+        "desc": "Hello Test",
+        "techSkills": [
+          "skill",
+          "skill2",
+          "skill3"
+        ],
+        "leadSkills": [
+          "skill",
+          "skill2",
+          "skill3"
+        ],
+        "imageURLs": [
+          "pic.png",
+          "pic2.png"
+        ]
+      }
+  }

@@ -22,6 +22,7 @@
   },
   "include": [
     "src",
-    "src/root"
+    "src/root",
+    "src/components"
   ]
 }
