@@ -14,19 +14,23 @@ function Header() {
         </Typography>
       </Stack>
 
+      <Stack direction="row" spacing={4} justifyContent="center">
+        <Typography variant="h6" component="h5">
+            Below you can find some projects I've worked on
+        </Typography>
+      </Stack>
+
       <Stack direction="row" spacing={3} justifyContent="center">
 
-        <a href='https://www.linkedin.com/in/matthew-smith-softdev/' target="_blank">
-        <IconButton color="primary" aria-label="LinkedIn">
+        <IconButton color="primary" aria-label="LinkedIn" href='https://www.linkedin.com/in/matthew-smith-softdev/' target="_blank">
           <LinkedIn />
         </IconButton>
-        </a>
 
-        <a href='https://github.com/MatthewHightech' target="_blank">
-        <IconButton color="primary" aria-label="GitHub">
+
+        <IconButton color="primary" aria-label="GitHub" href='https://github.com/MatthewHightech' target="_blank">
           <GitHub />
         </IconButton>
-        </a>
+
       </Stack>
     </Paper>
   );

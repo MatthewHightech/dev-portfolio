@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, Grid, Paper, Button } from '@mui/material';
+import { Card, Grid, Paper, Button, Modal } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
+import ProjectModal from './modal';
 
 interface ItemProps {
   item: {
@@ -28,6 +29,10 @@ function Project() {
     )
   }
 
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <Grid item xs={11} md={4}>
       <Card>
@@ -39,6 +44,15 @@ function Project() {
             }
         </Carousel>
         <h1>Project 1</h1>
+        <Button onClick={handleOpen}  variant="contained" color="primary">Learn More</Button>
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <ProjectModal />
+          </Modal>
       </Card>
     </Grid>
   );
