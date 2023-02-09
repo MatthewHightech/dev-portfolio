@@ -4,6 +4,9 @@ import Carousel from 'react-material-ui-carousel';
 
 import { GitHub } from '@mui/icons-material';
 
+import { ProjectProps } from '../root/App'
+
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -16,7 +19,11 @@ const style = {
   p: 4,
 };
 
-function ProjectModal() {
+const stackStyle = {
+  margin: 3,
+}
+
+function ProjectModal(props: ProjectProps) {
 
   const items = [
     {
@@ -66,14 +73,14 @@ function ProjectModal() {
       Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
       </Typography>
 
-      <Stack direction="row" spacing={4} justifyContent="left">
+      <Stack sx={stackStyle} direction="row" spacing={4} justifyContent="left">
         <Typography variant="h6" component="h6">
             Technical Skills:
         </Typography>
         {techSkills}
       </Stack>
 
-      <Stack direction="row" spacing={4} justifyContent="left">
+      <Stack sx={stackStyle} direction="row" spacing={4} justifyContent="left">
         <Typography variant="h6" component="h6">
             Leadership Skills:
         </Typography>

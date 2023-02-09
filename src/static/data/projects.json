@@ -19,7 +19,7 @@
       ]
     },
     "project2": {
-      "name": "Grasp AI",
+      "name": "Stock Simulator",
       "role": "Lead Dev",
       "desc": "Hello Test",
       "techSkills": [
@@ -38,7 +38,7 @@
       ]
     },
     "project3": {
-      "name": "Grasp AI",
+      "name": "Meet Maps",
       "role": "Lead Dev",
       "desc": "Hello Test",
       "techSkills": [
@@ -57,7 +57,7 @@
       ]
     },
     "project4": {
-        "name": "Grasp AI",
+        "name": "Prison Break",
         "role": "Lead Dev",
         "desc": "Hello Test",
         "techSkills": [
@@ -76,7 +76,7 @@
         ]
       },
       "project5": {
-        "name": "Grasp AI",
+        "name": "Open Space",
         "role": "Lead Dev",
         "desc": "Hello Test",
         "techSkills": [

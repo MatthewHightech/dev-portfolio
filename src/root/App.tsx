@@ -7,7 +7,7 @@ import data from '../static/data/projects.json';
 import Project from '../components/project';
 import Header from '../components/header';
 
-interface ProjectData {
+export interface ProjectData {
   name: string,
   role: string,
   desc: string,
@@ -40,7 +40,7 @@ function App() {
   const projects = projectsArray.map((data,id)=>{
     console.log("Data: ", data);
     return (
-      <Project key={id}/>
+      <Project parentData={data}/>
     )
   })
 
@@ -57,7 +57,7 @@ function App() {
         justifyContent="center"
         alignItems="center"
         >
-          {projects}
+          {projects ? projects : <h1>Projects not found</h1>}
         </Grid>
       </div>
     </ThemeProvider>

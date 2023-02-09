@@ -15,7 +15,7 @@ function Header() {
       </Stack>
 
       <Stack direction="row" spacing={4} justifyContent="center">
-        <Typography variant="h6" component="h5">
+        <Typography variant="subtitle1" component="h5">
             Below you can find some projects I've worked on
         </Typography>
       </Stack>
