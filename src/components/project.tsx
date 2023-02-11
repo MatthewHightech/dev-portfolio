@@ -24,9 +24,9 @@ function Project(props: ProjectProps) {
   return (
     <Grid item xs={11} md={4}>
       <Card>
-        <Carousel fullHeightHover={true} autoPlay={false}>
+        <Carousel autoPlay={false} height="300px">
             {
-              props.parentData.imageURLs?.map( (url) => <img src={`/images/${url}`} alt={url} />)   
+              props.parentData.imageURLs?.map( (url) => <img src={`/images/${url}`} alt={url} width="100%"/>)   
             }
         </Carousel>
         <Typography variant="h5" component="h5">

@@ -52,8 +52,8 @@
         "skill3"
       ],
       "imageURLs": [
-        "pic.png",
-        "pic2.png"
+        "meetmaps/1.png",
+        "meetmaps/2.png"
       ]
     },
     "project4": {
@@ -71,8 +71,7 @@
           "skill3"
         ],
         "imageURLs": [
-          "pic.png",
-          "pic2.png"
+          "prison/1.png"
         ]
       },
       "project5": {
@@ -90,8 +89,7 @@
           "skill3"
         ],
         "imageURLs": [
-          "pic.png",
-          "pic2.png"
+          "openspace/1.png"
         ]
       }
   }
