@@ -13,7 +13,7 @@ export interface ProjectData {
   desc: string,
   techSkills: string[],
   leadSkills: string[],
-  imagesURLs: string[],
+  imageURLs: string[],
 }
 
 const theme = createTheme({

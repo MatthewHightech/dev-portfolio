@@ -5,6 +5,8 @@ import ProjectModal from './modal';
 
 import { ProjectData } from '../root/App'
 
+
+
 export interface ProjectProps {
   parentData: ProjectData
 }
@@ -22,12 +24,11 @@ function Project(props: ProjectProps) {
   return (
     <Grid item xs={11} md={4}>
       <Card>
-        {/*<Carousel fullHeightHover={true}>
+        <Carousel fullHeightHover={true} autoPlay={false}>
             {
-                props.parentData.imagesURLs.map( (url) => <img src={url} alt={url} /> )
+              props.parentData.imageURLs?.map( (url) => <img src={`/images/${url}`} alt={url} />)   
             }
         </Carousel>
-          */}
         <Typography variant="h5" component="h5">
             {props.parentData.name}
         </Typography>
@@ -44,7 +45,7 @@ function Project(props: ProjectProps) {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
           >
-            <ProjectModal data={props.parentData}/>
+            <ProjectModal parentData={props.parentData}/>
           </Modal>
       </Card>
     </Grid>
